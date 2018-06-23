@@ -1,6 +1,9 @@
 #!/bin/bash
 
-repo-add katio.db.tar.gz ../pkg-yaourt/*.pkg.tar.*
+cp ../pkg/linux-ck-skylake-* ../pkg-yaourt/
+
+repo-add katio.db.tar.gz ../pkg-yaourt/*.pkg.tar.gz
+repo-add katio.db.tar.gz ../pkg-yaourt/*.pkg.tar.xz
 
 rm katio.db
 rm katio.files
